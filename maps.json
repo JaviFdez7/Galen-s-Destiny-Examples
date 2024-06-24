@@ -1,0 +1,48 @@
+{
+    "origin": {
+        "x": 0,
+        "y": 0
+    },
+    "name": "The Mines",
+    "roomPrefabName": "InitialRoom",
+    "doors": [{"direction" : "RIGHT", "key" : -1}],
+    "difficulty": 1
+},
+{
+    "origin": {
+        "x": 1,
+        "y": 0
+    },
+    "name": "Mine entrance",
+    "roomPrefabName": "MinigameRoom",
+    "minigameData": {
+        "minigameName": "Binary Minigame",
+        "minigameSceneName": "MG1 Binary",
+        "minigameHistory": 1,
+        "skillNameForUnlock": "Shield"
+    },
+    "doors": [
+        {"direction" : "LEFT", "key" : -1},
+        {"direction" : "RIGHT", "key" : -1}
+    ],
+    "difficulty": 1,
+    "key": "1"
+},
+{
+    "origin": {
+        "x": 2,
+        "y": 0
+    },
+    "name": "Not Safe City",
+    "roomPrefabName": "EnemyRoom",
+    "doors": [
+        {"direction" : "DOWN", "key" : -1},
+        {"direction" : "UP", "key" : 1},
+        {"direction" : "LEFT", "key" : -1}
+    ],
+    "difficulty": 1,
+    "possibleEnemies": [
+        "DrillEnemy"
+    ],
+    "numberOfEnemies": 5
+}
